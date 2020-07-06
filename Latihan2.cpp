@@ -8,6 +8,14 @@ public:
 	
 };
 
+void tampilkanData(Node* n){
+	while(n != NULL){
+		cout<<n->data<<" ";
+		n = n->next;
+	}
+	cout<<"\n\n";
+}
+
 int main(){
 	Node* head = NULL;
 	Node* second = NULL;
@@ -26,5 +34,6 @@ int main(){
 	third->data = 3;
 	third->next = NULL;
 
+	tampilkanData(head);
 	return 0;
 }
